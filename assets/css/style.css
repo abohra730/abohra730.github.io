@@ -344,7 +344,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -437,7 +437,25 @@ section {
   position: relative;
 }
 
-.experience .experience-item h4 {
+.experience .org-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  position: relative;
+}
+
+.experience .org-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #82909c;
+}
+
+.experience h4 {
   line-height: 18px;
   font-size: 20px;
   font-weight: 700;
@@ -446,7 +464,7 @@ section {
   margin-bottom: 10px;
 }
 
-.experience .experience-item h5 {
+.experience h5 {
   font-size: 16px;
   display: inline-block;
   font-weight: 600;
